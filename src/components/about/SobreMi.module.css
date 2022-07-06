@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+body {
+  background-image: url("../../images/home.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+
+.principal {
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 250px;
+  background-color: #feffa991;
+  width: 75%;
+  height: 90%;
+  color: black;
+  border-radius: 2rem;
+  font-family: "Kanit";
+}
+
+.h {
+  font-size: 45px;
+  margin-top: 1%;
+  margin-left: -1rem;
+  text-align: center;
+  color: black;
+}
+
+.principal .containImg {
+  position: absolute;
+  background-color: black;
+  margin-top: 10rem;
+  height: 100rem;
+}
+
+.imagen {
+  margin: 160px 0px 0px 680px;
+  position: absolute;
+  padding: 10px 20px;
+  height: 150px;
+}
+
+.datos {
+  font-size: 32px;
+  color: black;
+  margin: 2% 5%;
+  padding: 0px;
+  position: absolute;
+}
+
+.datos .js img {
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: -0.5rem;
+  margin-left: -4rem;
+}
+
+.datos .re img {
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: -0.3rem;
+  margin-left: -4rem;
+}
+
+.datos .red img {
+  position: absolute;
+  width: 3.5rem;
+  height: 3rem;
+  margin-top: -0rem;
+  margin-left: -4rem;
+}
+
+.datos .ex img {
+  position: absolute;
+  width: 10rem;
+  height: 3rem;
+  margin-top: -0rem;
+  margin-left: -9.5rem;
+}
+
+.volver {
+  font-size: 30px;
+  margin-top: 730px;
+  margin-left: 650px;
+  color: black;
+}
+
+.spanHome {
+  color: black;
+}
+
+.htres {
+  color: black;
+}
+
+.principal a {
+  text-decoration: none;
+}
+
+.LinkSobreMi {
+  text-decoration: none;
+  color: black;
+}
+
+.git {
+  margin-top: -3.5rem;
+  margin-left: 13rem;
+}

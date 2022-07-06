@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+.btnSearch {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: none;
+  margin-left: 110rem;
+  margin-top: -4.3rem;
+  background-color: black;
+  font-family: "Ubuntu";
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  padding-bottom: 0.9rem;
+}
+
+.inputSearch {
+  position: absolute;
+  margin-left: 97.5rem;
+  margin-top: -4rem;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+}

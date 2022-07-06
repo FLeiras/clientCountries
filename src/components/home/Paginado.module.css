@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+.btn {
+  background-color: #faf8f8c9;
+  border: 1px solid #dddddd;
+  border-radius: 0.5rem;
+  font-family: "Ubuntu";
+  cursor: pointer;
+  padding: 5px 10px;
+  box-shadow: -1px 3px 6px -1px rgba(0, 0, 0, 0.75);
+  margin: 45px 0px;
+  transition: 0.1s all ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ffb562;
+  border: none;
+}
+
+.btn__active {
+  background-color: #ffb562;
+  border: none;
+  font-family: "Kanit";
+  cursor: pointer;
+  padding: 5px 15px;
+  box-shadow: -1px 3px 6px -1px rgba(0, 0, 0, 0.75);
+  margin: 10px 0px;
+}
+
+.btn__active button {
+  background-color: #ffb562;
+  border: none;
+  font-family: "Kanit";
+  cursor: pointer;
+  padding: 5px 15px;
+  box-shadow: -1px 3px 6px -1px rgba(0, 0, 0, 0.75);
+  margin: 10px 0px;
+}

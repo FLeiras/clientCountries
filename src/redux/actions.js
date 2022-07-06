@@ -2,7 +2,9 @@ import axios from "axios";
 
 export const getCountries = () => {
   return async function (dispatch) {
-    const response = await axios.get("http://localhost:3001/countries");
+    const response = await axios.get(
+      "https://countries-fede-app.herokuapp.com/countries"
+    );
     return dispatch({
       type: "GET_COUNTRIES",
       payload: response.data,
@@ -12,7 +14,9 @@ export const getCountries = () => {
 
 export const getActivity = () => {
   return async function (dispatch) {
-    const response = await axios.get("http://localhost:3001/activity");
+    const response = await axios.get(
+      "https://countries-fede-app.herokuapp.com/activity"
+    );
     return dispatch({
       type: "GET_ACTIVITY",
       payload: response.data,
@@ -22,7 +26,9 @@ export const getActivity = () => {
 
 export const getCountryById = (id) => {
   return async function (dispatch) {
-    const response = await axios.get("http://localhost:3001/countries/" + id);
+    const response = await axios.get(
+      "https://countries-fede-app.herokuapp.com/countries/" + id
+    );
     return dispatch({
       type: "GET_COUNTRY_BY_ID",
       payload: response.data,
@@ -60,7 +66,10 @@ export function filterByActivity(payload) {
 
 export function postActivity(payload) {
   return async function () {
-    const json = await axios.post("http://localhost:3001/activity", payload);
+    const json = await axios.post(
+      "https://countries-fede-app.herokuapp.com/activity",
+      payload
+    );
     return json;
   };
 }
@@ -68,7 +77,7 @@ export function postActivity(payload) {
 export function deleteActivity(payload) {
   return async function (dispatch) {
     const response = await axios.delete(
-      `http://localhost:3001/activity/${payload}`
+      `https://countries-fede-app.herokuapp.com/activity/${payload}`
     );
     return dispatch({
       type: "DELETE_ACTIVITY",

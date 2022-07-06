@@ -39,10 +39,6 @@ const ActivityCard = (activity) => {
       <div className={styles.btnDel}>
         <button onClick={handleDelete}>Delete</button>
       </div>
-
-      <div className={styles.btnEd}>
-        <button>Edit</button>
-      </div>
     </div>
   );
 };

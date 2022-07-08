@@ -7,12 +7,14 @@ import {
   SEARCH_COUNTRIES,
   FILTER_BY_ACTIVITY,
   DELETE_ACTIVITY,
+  FILTER_NUEVO,
 } from "./actions";
 import {
   sortCountries,
   countryByContinent,
   filterByActivity,
   searchCountry,
+  populationFilter,
 } from "./utils";
 
 const initialState = {
@@ -20,7 +22,6 @@ const initialState = {
   copyCountries: [],
   activity: [],
   countryDetails: [],
-  sortCountries: [],
 };
 
 function rootReducer(state = initialState, action) {
@@ -44,7 +45,7 @@ function rootReducer(state = initialState, action) {
     case SORT_COUNTRIES:
       return {
         ...state,
-        sortCountries: sortCountries(action.payload, state.countries),
+        countries: sortCountries(action.payload, state.countries),
       };
     case FILTER_BY_CONTINENT:
       return {
@@ -64,6 +65,11 @@ function rootReducer(state = initialState, action) {
     case DELETE_ACTIVITY:
       return {
         ...state,
+      };
+    case FILTER_NUEVO:
+      return {
+        ...state,
+        countries: populationFilter(state.copyCountries),
       };
     default:
       return state;

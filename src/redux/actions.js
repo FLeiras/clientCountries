@@ -2,9 +2,7 @@ import axios from "axios";
 
 export const getCountries = () => {
   return async function (dispatch) {
-    const response = await axios.get(
-      "https://countries-fede-app.herokuapp.com/countries"
-    );
+    const response = await axios.get("http://localhost:3001/countries");
     return dispatch({
       type: "GET_COUNTRIES",
       payload: response.data,
@@ -14,9 +12,7 @@ export const getCountries = () => {
 
 export const getActivity = () => {
   return async function (dispatch) {
-    const response = await axios.get(
-      "https://countries-fede-app.herokuapp.com/activity"
-    );
+    const response = await axios.get("http://localhost:3001/activity");
     return dispatch({
       type: "GET_ACTIVITY",
       payload: response.data,
@@ -26,9 +22,7 @@ export const getActivity = () => {
 
 export const getCountryById = (id) => {
   return async function (dispatch) {
-    const response = await axios.get(
-      "https://countries-fede-app.herokuapp.com/countries/" + id
-    );
+    const response = await axios.get("http://localhost:3001/countries/" + id);
     return dispatch({
       type: "GET_COUNTRY_BY_ID",
       payload: response.data,
@@ -66,10 +60,7 @@ export function filterByActivity(payload) {
 
 export function postActivity(payload) {
   return async function () {
-    const json = await axios.post(
-      "https://countries-fede-app.herokuapp.com/activity",
-      payload
-    );
+    const json = await axios.post("http://localhost:3001/activity", payload);
     return json;
   };
 }
@@ -77,12 +68,19 @@ export function postActivity(payload) {
 export function deleteActivity(payload) {
   return async function (dispatch) {
     const response = await axios.delete(
-      `https://countries-fede-app.herokuapp.com/activity/${payload}`
+      `http://localhost:3001/activity/${payload}`
     );
     return dispatch({
       type: "DELETE_ACTIVITY",
       payload: response.data,
     });
+  };
+}
+
+export function filtroNuevo(payload) {
+  return {
+    type: "FILTER_NUEVO",
+    payload,
   };
 }
 
@@ -94,3 +92,4 @@ export const FILTER_BY_CONTINENT = "FILTER_BY_CONTINENT";
 export const SEARCH_COUNTRIES = "SEARCH_COUNTRIES";
 export const FILTER_BY_ACTIVITY = "FILTER_BY_ACTIVITY";
 export const DELETE_ACTIVITY = "DELETE_ACTIVITY";
+export const FILTER_NUEVO = "FILTER_NUEVO";

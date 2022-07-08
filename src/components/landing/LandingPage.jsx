@@ -5,7 +5,18 @@ import Styles from "./LandingPage.module.css";
 function LandingPage() {
   return (
     <div className={Styles.Pricontainer}>
-      <h1>Welcome to Henry-Country-App</h1>
+      <div className={Styles.titleLanding}>
+        <h3>Welcome to</h3>
+        <h1>Country-App</h1>
+        <p>
+          SPA(Simple Page Application),<br></br>donde podras hacer un recorrido
+          por todos los paises del Planeta,<br></br> en la cual podras
+          ordenarlos segun varios criterios,<br></br> filtrarlos segun su
+          continente o actividad turistica.<br></br> Tambien podras crear una
+          actividad turistica<br></br> para el o los paises que desees.<br></br>{" "}
+          Espero la disfrutes...Vamos?!
+        </p>
+      </div>
       <Link to="/home">
         <div className={Styles.container}>
           <div className={Styles.center}>

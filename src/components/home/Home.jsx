@@ -7,6 +7,7 @@ import {
   sortByName,
   filterByContinent,
   filterByActivity,
+  filtroNuevo,
 } from "../../redux/actions";
 import Card from "../UI/Card";
 import Paginado from "../home/Paginado";

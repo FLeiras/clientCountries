@@ -3,6 +3,7 @@
 .landing_container {
   background-image: url("../images/landing2.jpg");
   align-items: center;
+  justify-content: center;
   padding: 0;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -65,7 +66,15 @@
   font-weight: 100;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
+  .titlelanding {
+    display: flex;
+    float: right;
+    margin: 4.5rem 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .titlelanding h1 {
     font-family: "Ubuntu";
     font-size: 40px;

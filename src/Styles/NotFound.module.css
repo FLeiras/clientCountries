@@ -1,0 +1,63 @@
+.page img {
+  display: flex;
+  position: absolute;
+  margin-left: 0rem;
+  height: 60.5rem;
+  width: 120rem;
+}
+
+.button {
+  float: right;
+  padding: 80px;
+  margin-right: 900px;
+  margin-top: 50rem;
+  color: #ccc;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #b100e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 20px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+.button:hover {
+  cursor: pointer;
+  color: #b100e8;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+.button:hover::before {
+  width: 100%;
+}
+.title {
+  padding: 70px;
+  color: #ccc;
+  font-size: 70px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-shadow: 2px 0 0 rgb(25, 24, 24), -2px 0 0 rgb(25, 24, 24),
+    0 2px 0 rgb(25, 24, 24), 0 -2px 0 rgb(25, 24, 24), 1px 1px rgb(25, 24, 24),
+    -1px -1px 0 rgb(25, 24, 24), 1px -1px 0 rgb(25, 24, 24),
+    -1px 1px 0 rgb(25, 24, 24);
+}

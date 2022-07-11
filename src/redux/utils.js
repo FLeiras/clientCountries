@@ -1,5 +1,7 @@
 export const sortCountries = (order, array) => {
   switch (order) {
+    case "All":
+      return array;
     case "asc":
       return array.sort((a, b) => {
         return a.name.localeCompare(b.name);
@@ -67,8 +69,4 @@ export const searchCountry = (name, arr) => {
         e.name.toLowerCase().includes(name.toString().toLowerCase())
       );
   }
-};
-
-export const populationFilter = (arr) => {
-  return arr.filter((c) => c.population > 100000000000000000000);
 };

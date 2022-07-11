@@ -1,11 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../src/components/home/Home";
-import LandingPage from "./components/landing/LandingPage";
-import SobreMi from "./components/about/SobreMi";
-import Form from "./components/form/Form";
-import CountryDetail from "./components/details/CountryDetail";
-import NotFound from "./components/notfound/NotFound";
+import Home from "../src/components/Home";
+import LandingPage from "./components/LandingPage";
+import SobreMi from "./components/SobreMi";
+import Form from "./components/Form";
+import CountryDetail from "./components/CountryDetail";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (

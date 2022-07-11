@@ -65,11 +65,11 @@
   font-weight: 100;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   .titlelanding h1 {
     font-family: "Ubuntu";
     font-size: 40px;
-    margin: -5px 50px 50px 0px;
+    margin: -15px 10px 0px 10px;
   }
 
   .titlelanding h3 {
@@ -84,7 +84,7 @@
     font-size: 25px;
     font-family: "Kanit";
     margin-bottom: 50px;
-    margin-left: -50px;
+    margin-left: -5px;
   }
   .p_container {
     width: 250px;
@@ -92,7 +92,7 @@
 
   .btn {
     margin-top: -1rem;
-    margin-left: -2.5rem;
+    margin-left: 1rem;
     width: 150px;
     height: 40px;
     cursor: pointer;
